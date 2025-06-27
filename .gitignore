@@ -1,0 +1,39 @@
+# ========================
+# BACKEND IGNORES
+# ========================
+backend/node_modules/
+backend/.env
+backend/*.log
+backend/npm-debug.log*
+backend/.env.local
+backend/.env.development
+backend/.env.test
+
+# ========================
+# FRONTEND IGNORES
+# ========================
+frontend/.DS_Store
+frontend/thumbs.db
+
+# ========================
+# SYSTEM IGNORES
+# ========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# ========================
+# IDE/EDITOR IGNORES
+# ========================
+.vscode/
+.idea/
+*.code-workspace
+
+# ========================
+# GENERATED IMAGES
+# ========================
+*.png
+*.jpg
+*.jpeg
+!screenshot.png  # Keep the demo screenshot
