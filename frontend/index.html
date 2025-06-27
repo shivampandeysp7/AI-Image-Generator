@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+
+    <div class="container">
+
+        <div class="header-line">
+            <h1>AI Image Generator</h1>
+            <!-- <p class="subtitle">Powered by Stability AI</p> -->
+        </div>
+        <div class="input-section">
+            <textarea id="prompt-input" placeholder="Describe the image you want to generate..."></textarea>
+            <div class="controls">
+                <button id="generate-btn">Generate Image</button>
+                <button id="download-btn" disabled>Download Image</button>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating your image...</p>
+            </div>
+            <div class="image-container" id="image-container">
+                <p>Your generated image will appear here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
